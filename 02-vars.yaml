@@ -10,5 +10,5 @@
    - name: using local Variables
      ansible.builtin.debug:
       msg: value of local Variables is {{URL}}
-    vars:
+     vars:
       URL: local.google.com

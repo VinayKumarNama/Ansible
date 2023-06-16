@@ -2,7 +2,7 @@
   hosts: all
   vars:
     action: true
-    bar: 
+    bar: xyz
   tasks:
    - name: run this task only on centos machines
      ansible.builtin.debug:

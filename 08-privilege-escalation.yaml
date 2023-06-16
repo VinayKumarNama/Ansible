@@ -1,5 +1,6 @@
 - name: using privilege actions
   hosts: all
+  become: yes
   tasks:
     - name: checking the user id 
       ansible.builtin.shell: id 

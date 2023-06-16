@@ -2,6 +2,7 @@
   hosts: all
   vars:
     action: true
+    bar: 
   tasks:
    - name: run this task only on centos machines
      ansible.builtin.debug:
@@ -14,4 +15,8 @@
    - name: using actions
      ansible.builtin.debug:
       msg: I am running this command becuase my action is true
-     when: action 
+     when: action
+    - name: using bars
+      ansible.builtin.debug:
+        msg: "BAR is not declared"
+      when: bar is undefined 

@@ -10,3 +10,7 @@
    - name: decalre the variables
      set_fact:
       STATUSCODE: "{{OUT.rc}}"
+   - name: printing uptime command exit code
+     ansible.builtin.debug:
+      msg: uptime command exit code is {{STATUSCODE}}
+  

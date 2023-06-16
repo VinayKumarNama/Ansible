@@ -1,5 +1,6 @@
 - name: uses of facts
   hosts: all
+  gather_facts: false
   tasks:
    - name: printing the facts
      ansible.builtin.debug:

@@ -4,7 +4,7 @@
     - name: checking tomact STATUs 
       ansible.builtin.shell: ps -ef | grep java | grep -v grep
       register: OUT
-      #ignore_errors: yes
+      ignore_errors: yes
 
     - name: starting tomact
       ansible.builtin.debug:

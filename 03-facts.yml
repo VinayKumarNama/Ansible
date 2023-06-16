@@ -1,7 +1,11 @@
 - name: uses of facts
   hosts: all
-  gather_facts: false
+  #gather_facts: false
   tasks:
    - name: printing the facts
      ansible.builtin.debug:
         msg: ansible_distribution is {{ansible_distribution}}
+
+   - name: print the mac address of machines
+     ansible.builtin.debug:
+      msg: mac address is {{ansible_default_ipv4.macaddress}}

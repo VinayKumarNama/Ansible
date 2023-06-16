@@ -7,3 +7,6 @@
    - name: printing the OUT variable
      ansible.builtin.debug:
       msg: "{{OUT.stdout}}"
+   - name: decalre the variables
+     set_fact:
+      STATUSCODE: "{{OUT.rc}}"

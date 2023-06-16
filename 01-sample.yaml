@@ -4,5 +4,8 @@
     - name: printing hello from play1
       ansible.builtin.debug:
         msg: Hello from play1
-
+    
+    - name: printing Hi from play1
+      ansible.builtin.debug:
+        msg: Hi from Play1
 

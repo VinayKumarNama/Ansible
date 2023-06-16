@@ -4,4 +4,4 @@
    - name: run this task only on centos machines
      ansible.builtin.debug:
       msg: I am Centos machine
-     when: ansible_distribution = "CentOS"
+     when: ansible_distribution == "CentOS"

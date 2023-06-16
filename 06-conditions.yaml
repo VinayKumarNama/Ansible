@@ -16,7 +16,7 @@
      ansible.builtin.debug:
       msg: I am running this command becuase my action is true
      when: action
-    - name: using bars
-      ansible.builtin.debug:
-        msg: "BAR is not declared"
-      when: bar is undefined 
+   - name: using bars
+     ansible.builtin.debug:
+      msg: "BAR is not declared"
+     when: bar is undefined 

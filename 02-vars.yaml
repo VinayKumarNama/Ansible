@@ -4,6 +4,11 @@
     URL: play.google.com
   vars_files:
     - dev-vars.yml
+  vars_prompt:
+    - name: URLname
+      prompt: Enter the URLname
+      private: no
+
   tasks:
    - name: printing value of Variables
      ansible.builtin.debug:
@@ -15,6 +20,10 @@
      vars:
       URL: local.google.com
 
-   - name: using vars vars_files
+   - name: using vars files
      ansible.builtin.debug:
       msg: "{{URL}}"
+  
+   - name: print the prompt Variables
+     ansible.builtin.debug:
+      msg: url from the prompt variable is {{URLname}}

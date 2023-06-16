@@ -1,0 +1,6 @@
+- name: using register variables
+  hosts: all
+  tasks:
+   - name: using shell modules
+     ansible.builtin.shell: uptime
+     register: OUT

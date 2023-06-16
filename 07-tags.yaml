@@ -5,3 +5,7 @@
      ansible.builtin.debug:
       msg: Installing Frontend
      tags: frontend
+   - name: starting frontend
+     ansible.builtin.debug:
+      msg: Starting Frontend
+     tags: frontend

@@ -9,3 +9,9 @@
       ansible.builtin.debug:
         msg: Hi from Play1
 
+- name: play2
+  hosts: node2
+  tasks:
+    - name: printing from node2
+      ansible.builtin.debug:
+        msg: Message from node2 

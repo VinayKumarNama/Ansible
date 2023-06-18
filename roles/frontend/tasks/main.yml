@@ -2,3 +2,8 @@
   ansible.builtin.package:
     name: nginx
     state: present
+- name: Download and extract frontend
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
+    
